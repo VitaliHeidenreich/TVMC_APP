@@ -3,35 +3,20 @@
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <EditText
-        android:id="@+id/editConnectivity"
+        android:id="@+id/editSerialText"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="114dp"
         android:hint="Add text here"
         android:inputType="" />
 
     <CheckBox
-        android:id="@+id/cbTheme"
+        android:id="@+id/cbCollisionReset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editConnectivity"
+        android:layout_below="@+id/editSerialText"
         android:layout_alignParentStart="true"
-        android:text="Absenken der Helligkeit bei Nacht" />
-
-    <Spinner
-        android:id="@+id/spinnerUebergang"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="21dp"
-        android:layout_below="@+id/cbTheme"
-        android:layout_alignParentStart="true"
-        android:text="Übergang defineren:" />
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="5dp"
+        android:text="reset collision detected state" />
 
 </RelativeLayout>

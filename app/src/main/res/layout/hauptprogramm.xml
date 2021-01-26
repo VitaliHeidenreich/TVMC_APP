@@ -5,9 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.domain.no.wordclock.MainActivity"
+    tools:context="com.domain.no.MyTVMC.MainActivity"
     android:focusable="true"
     android:focusableInTouchMode="true">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/receiveMessage"
+        android:layout_marginStart="-86dp"
+        android:layout_marginTop="-104dp"
+        android:layout_toEndOf="@+id/iBtnLeft"
+        app:srcCompat="@drawable/board_ausgeschnitten" />
 
     <EditText
         android:id="@+id/receiveMessage"
@@ -106,6 +116,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/btnSetColorToDef"
         android:layout_marginBottom="11dp"
+        android:background="@drawable/bg_button_pressed"
         android:text="Allow auto move" />
 
     <ImageButton
