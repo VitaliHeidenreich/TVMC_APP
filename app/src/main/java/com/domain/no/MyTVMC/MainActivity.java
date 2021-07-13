@@ -88,6 +88,7 @@ public class MainActivity extends AppCompatActivity implements SettingsDialog.Ex
 
         receiveText = findViewById(R.id.receiveMessage);
 
+
         textViewColor = findViewById(R.id.textViewColor);
         txtConnectionstatus =  findViewById(R.id.txtConnectionstatus);
 
@@ -99,7 +100,7 @@ public class MainActivity extends AppCompatActivity implements SettingsDialog.Ex
         btnLED.setOnClickListener(btnListener);
         btnActualTime.setOnClickListener(btnListener);
         checkBoxAutoMove.setOnClickListener(btnListener);
-        checkBoxAutoMove.setChecked(true);
+        checkBoxAutoMove.setChecked(false);
 
         // OnTouchListener
         iBtnLeft.setOnTouchListener(new View.OnTouchListener() {
@@ -161,6 +162,7 @@ public class MainActivity extends AppCompatActivity implements SettingsDialog.Ex
         //    wifiManager.setWifiEnabled(true);
         //}
     }
+
 
     /// ToDo ######################################################################################
 

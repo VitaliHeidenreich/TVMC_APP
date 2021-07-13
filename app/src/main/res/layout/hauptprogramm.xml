@@ -7,6 +7,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.domain.no.MyTVMC.MainActivity"
     android:focusable="true"
+    android:background="#FDF5AA"
     android:focusableInTouchMode="true">
 
     <ImageView
@@ -14,28 +15,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/receiveMessage"
-        android:layout_marginStart="-86dp"
-        android:layout_marginTop="-104dp"
+        android:layout_marginStart="-84dp"
+        android:layout_marginTop="-81dp"
         android:layout_toEndOf="@+id/iBtnLeft"
         app:srcCompat="@drawable/board_ausgeschnitten" />
 
     <EditText
         android:id="@+id/receiveMessage"
-        android:layout_width="408dp"
-        android:layout_height="120dp"
+        android:layout_width="410dp"
+        android:layout_height="173dp"
         android:layout_above="@+id/btnSetColorToDef"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="2dp"
-        android:layout_marginLeft="2dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
         android:layout_marginTop="58dp"
-        android:layout_marginBottom="374dp"
+        android:layout_marginBottom="321dp"
+        android:alpha="0.6"
         android:autofillHints=""
+        android:background="#4F5254"
         android:ems="10"
+        android:gravity="bottom"
         android:inputType="textMultiLine"
         android:scrollbars="vertical"
         android:text=""
+        android:textColor="#4F5254"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sendMessageBtn" />
 
@@ -92,7 +97,8 @@
         android:layout_marginLeft="-2dp"
         android:layout_marginRight="2dp"
         android:layout_marginBottom="1dp"
-        android:text="SET COLOR" />
+        android:text="SET COLOR"
+        android:alpha="0.9"/>
 
     <Button
         android:id="@+id/sendAndroidTime"
@@ -100,7 +106,9 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/txtConnectionstatus"
         android:layout_marginBottom="0dp"
-        android:text="clock time adjustment" />
+        android:text="clock time adjustment"
+        android:alpha="0.8"
+        />
 
     <CheckBox
         android:id="@+id/checkBoxTimeSetting"
@@ -117,24 +125,30 @@
         android:layout_above="@+id/btnSetColorToDef"
         android:layout_marginBottom="11dp"
         android:background="@drawable/bg_button_pressed"
-        android:text="Allow auto move" />
+        android:text="Allow auto move"
+        android:alpha="0.8"
+        />
 
     <ImageButton
         android:id="@+id/iBtnLeft"
         android:layout_width="82dp"
-        android:layout_height="82dp"
+        android:layout_height="180dp"
         android:layout_above="@+id/checkBoxAutoMove"
-        android:layout_marginBottom="124dp"
+        android:layout_marginBottom="65dp"
+        android:alpha="0.5"
+        android:background="#80C883"
         app:srcCompat="@android:drawable/ic_media_rew" />
 
     <ImageButton
         android:id="@+id/iBtnRight"
         android:layout_width="82dp"
-        android:layout_height="82dp"
+        android:layout_height="180dp"
         android:layout_above="@+id/checkBoxAutoMove"
         android:layout_marginStart="246dp"
-        android:layout_marginBottom="124dp"
+        android:layout_marginBottom="65dp"
         android:layout_toEndOf="@+id/iBtnLeft"
+        android:alpha="0.5"
+        android:background="#80C883"
         app:srcCompat="@android:drawable/ic_media_ff" />
 
 
